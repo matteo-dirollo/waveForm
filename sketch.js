@@ -127,7 +127,7 @@ beginShape();
 for(var w = -20; w < width + 20; w += 5){
 var micLevel = mic.getLevel();
 strokeWeight(100*micLevel+5);
-var h = (rand2*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-250;
+var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-250;
 curveVertex(w,h)
 stroke(255, 255, 51);
 }
