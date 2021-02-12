@@ -45,7 +45,7 @@ function draw() {
 		background(255);
 		blendMode(NORMAL);
 		noFill();
-//-------red Line -------
+//-------ligne rouge -------
 		beginShape();
 		for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
@@ -55,7 +55,7 @@ function draw() {
 			stroke(230,31,39);
 		}
 	endShape();
-//----blue line---------
+//----ligne violet---------
 	beginShape();
 			for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
@@ -65,7 +65,7 @@ function draw() {
 			stroke(115,40,134);
 		}
 	endShape();
-//-----green line-------
+//-----ligne rose-------
 	beginShape();
 			for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
@@ -75,6 +75,17 @@ function draw() {
 			stroke(255,153,204);
 		}
 	endShape();
+
+	//-------ligne rouge -------
+	beginShape();
+	for(var w = -20; w < width + 20; w += 5){
+		var micLevel = mic.getLevel();
+		strokeWeight(100*micLevel+5);
+		var h = ((rand3*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/4;
+		curveVertex(w,h)
+		stroke(60, 97, 171);
+	}
+endShape();
 
 }
 
@@ -90,6 +101,6 @@ color jaune = #ffff33;
 color violet = #732886; (115,40,134)
 color azure = #66ccff; 
 color rouge = #e61f27; (230, 31, 39)
-color bleu = #3c61ab; 
+color bleu = #3c61ab; (60, 97, 171)
 
 */
