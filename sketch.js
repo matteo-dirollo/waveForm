@@ -98,6 +98,17 @@ endShape();
 	}
 endShape();
 
+//-----ligne rose-------
+beginShape();
+for(var w = -20; w < width + 20; w += 5){
+var micLevel = mic.getLevel();
+strokeWeight(100*micLevel+5);
+var h = (rand2*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-150;
+curveVertex(w,h)
+stroke(0, 153, 51);
+}
+endShape();
+
 }
 
 /*
@@ -106,7 +117,7 @@ color noir = #000000;
 color blanc = #ffffff;
 color marron = #663300; (102,51,0)
 color orange = #ff9933;
-color vert = #009933;
+color vert = #009933; (0, 153, 51)
 color rose = #ff99cc; (255,153,204)
 color jaune = #ffff33; 
 color violet = #732886; (115,40,134)
