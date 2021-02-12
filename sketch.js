@@ -52,7 +52,7 @@ function draw() {
 			strokeWeight(100*micLevel+5);
 			var h = ((rand4*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
 			curveVertex(w,h)
-			stroke(200,111,237);
+			stroke(230,31,39);
 		}
 	endShape();
 //----blue line---------
@@ -62,7 +62,7 @@ function draw() {
 			strokeWeight(100*micLevel+5);
 			var h = (rand5*micLevel+50)*sin(w/(rand2)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
 			curveVertex(w,h)
-			stroke(189,236,56);
+			stroke(115,40,134);
 		}
 	endShape();
 //-----green line-------
@@ -72,8 +72,24 @@ function draw() {
 			strokeWeight(100*micLevel+5);
 			var h = (rand6*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
 			curveVertex(w,h)
-			stroke(111,237,224);
+			stroke(255,153,204);
 		}
 	endShape();
 
 }
+
+/*
+
+color noir = #000000;
+color blanc = #ffffff;
+color marron = #663300;
+color orange = #ff9933;
+color vert = #009933;
+color rose = #ff99cc; (255,153,204)
+color jaune = #ffff33; 
+color violet = #732886; (115,40,134)
+color azure = #66ccff; 
+color rouge = #e61f27; (230, 31, 39)
+color bleu = #3c61ab; 
+
+*/
