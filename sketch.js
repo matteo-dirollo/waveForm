@@ -81,9 +81,20 @@ function draw() {
 	for(var w = -20; w < width + 20; w += 5){
 		var micLevel = mic.getLevel();
 		strokeWeight(100*micLevel+5);
-		var h = ((rand3*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/4;
+		var h = ((rand3*micLevel)+50)*sin(w/(rand6)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
 		curveVertex(w,h)
 		stroke(60, 97, 171);
+	}
+endShape();
+
+	//-------ligne rouge -------
+	beginShape();
+	for(var w = -20; w < width + 20; w += 5){
+		var micLevel = mic.getLevel();
+		strokeWeight(100*micLevel+5);
+		var h = ((rand3*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2+50;
+		curveVertex(w,h)
+		stroke (102,51,0);
 	}
 endShape();
 
@@ -93,7 +104,7 @@ endShape();
 
 color noir = #000000;
 color blanc = #ffffff;
-color marron = #663300;
+color marron = #663300; (102,51,0)
 color orange = #ff9933;
 color vert = #009933;
 color rose = #ff99cc; (255,153,204)
