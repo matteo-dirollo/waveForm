@@ -50,7 +50,7 @@ function draw() {
 		for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
 			strokeWeight(100*micLevel+5);
-			var h = ((rand4*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
+			var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2;
 			curveVertex(w,h)
 			stroke(230,31,39);
 		}
@@ -60,7 +60,7 @@ function draw() {
 			for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
 			strokeWeight(100*micLevel+5);
-			var h = (rand5*micLevel+50)*sin(w/(rand2)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2+100;
+			var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2+100;
 			curveVertex(w,h)
 			stroke(115,40,134);
 		}
@@ -70,7 +70,7 @@ function draw() {
 			for(var w = -20; w < width + 20; w += 5){
 			var micLevel = mic.getLevel();
 			strokeWeight(100*micLevel+5);
-			var h = (rand6*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-100;
+			var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-100;
 			curveVertex(w,h)
 			stroke(255,153,204);
 		}
@@ -81,7 +81,7 @@ function draw() {
 	for(var w = -20; w < width + 20; w += 5){
 		var micLevel = mic.getLevel();
 		strokeWeight(100*micLevel+5);
-		var h = ((rand3*micLevel)+50)*sin(w/(rand6)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-50;
+		var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-50;
 		curveVertex(w,h)
 		stroke(60, 97, 171);
 	}
@@ -92,7 +92,7 @@ endShape();
 	for(var w = -20; w < width + 20; w += 5){
 		var micLevel = mic.getLevel();
 		strokeWeight(100*micLevel+5);
-		var h = ((rand3*micLevel)+50)*sin(w/(rand)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2+50;
+		var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2+50;
 		curveVertex(w,h)
 		stroke (102,51,0);
 	}
@@ -103,7 +103,7 @@ beginShape();
 for(var w = -20; w < width + 20; w += 5){
 var micLevel = mic.getLevel();
 strokeWeight(100*micLevel+5);
-var h = (rand2*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-150;
+var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-150;
 curveVertex(w,h)
 stroke(0, 153, 51);
 }
@@ -114,7 +114,7 @@ beginShape();
 for(var w = -20; w < width + 20; w += 5){
 var micLevel = mic.getLevel();
 strokeWeight(100*micLevel+5);
-var h = (rand2*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-200;
+var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-200;
 curveVertex(w,h)
 stroke(0, 0, 0);
 }
@@ -147,7 +147,7 @@ beginShape();
 for(var w = -20; w < width + 20; w += 5){
 var micLevel = mic.getLevel();
 strokeWeight(100*micLevel+5);
-var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-300;
+var h = (rand3*micLevel+50)*sin(w/(rand3)) * pow(abs(sin(w * randW + frameCount * randS)), 5) + height/2-350;
 curveVertex(w,h)
 stroke(255, 153, 51);
 }
